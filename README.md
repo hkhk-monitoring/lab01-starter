@@ -1,79 +1,90 @@
-# Labor 1: masina päevik ja keskne logiserver
+# Labor 1: öövahetus
 
 **Nimi:** _vastus_
 
 Juhend: <https://hkhk-monitoring.github.io/monitoring/week01/lab/>
 
-Kirjuta vastused `_vastus_` asemele. Konfid ja väljundid lähevad kaustadesse `konf/` ja `logid/` (juhendi osa "Esitamine").
+Kirjuta vastused `_vastus_` asemele. Konfid ja tõendid lähevad kaustadesse `konf/` ja `logid/` (juhendi osa "Esitamine"). `tooriistad/tee-suur-logi.sh` on osa B4 jaoks: ära loe seda enne, seal on vastused.
 
 ---
 
-## A1 · Kus päevik elab?
-
-**Ennustus:** kas `proxmox2` päevik elab üle taaskäivituse?
-
-> _vastus_
-
-**Tulemus** (`journalctl --list-boots`) **ja kas ennustus läks täppi:**
-
-> _vastus_
-
-## A2 · Üks sündmus, kaks kohta
+## A1 · Üks rida, kolm logi
 
 **Ennustus:** kuhu `logger`-i rida jõuab?
 
 > _vastus_
 
-**Tulemus:**
+**Tulemus ja mille poolest auditi logi erineb kahest teisest:**
 
 > _vastus_
 
-## A4 · Vead ja hoiatused
+## A2 · Kes tohib lugeda?
+
+**Ennustus:** kas tavakasutaja loeb `/var/log/secure`-t? Aga journalit?
+
+> _vastus_
+
+**Miks on parem lisada kolleeg gruppi `systemd-journal` kui anda talle `sudo`?**
+
+> _vastus_
+
+## A3 · Journal, mis ei unusta
+
+**Ennustus:** kas journal elas üle taaskäivituse? **Tulemus enne ja pärast:**
+
+> _vastus_
+
+## A4 · Keegi koputab uksele
 
 - Vigu (err ja hullemad) sellest käivitusest: _vastus_
 - Kõige sagedasem viga (programm): _vastus_
+- Miks `Invalid user` rida pole `messages`-is: _vastus_
 
-## A5 · Sinu rakenduse reegel
+## A5 · E-poe enda logi
 
-**Ennustus:** millisesse faili lähevad `info`, `warning` ja `err` kirjed?
-
-> _vastus_
-
-**Miks läks `err` ka hoiatuste faili?**
+**Ennustus:** kuhu lähevad `info`, `warning` ja `err`? **Miks läks `err` ka hoiatuste faili?**
 
 > _vastus_
 
-## A6 · Pööra logi
+## A6 · Logi, mis ei täida ketast
 
-**Kuhu läks rida pärast esimest pööramist ja miks?**
+**Kuhu läks rida pärast esimest pööramist ja miks? Mitu faili jäi pärast nelja pööramist alles?**
 
 > _vastus_
 
-**Ennustus:** mitu `pood.log.*` faili on pärast nelja pööramist alles? **Tulemus:**
+## A7 · Kes seda tegi?
+
+**Mis vahe on `uid` ja `auid` väljal? Mis teeb ründaja töö raskemaks, kui ta saab ka auditi logi kustutada?**
 
 > _vastus_
 
 ## B1-B2 · Keskserver
 
-**Ennustus:** kuhu `proxmox2` logid `proxmox1`-s jõuavad?
-
-> _vastus_
-
 **Miks esimene rida kohe kohale ei jõudnud ja kuidas sa põhjuse leidsid?**
 
 > _vastus_
 
-## B5 · Intsident
+**Miks `tellimus 2001` keskserverisse ei jõua?**
 
-- Mitu katset: _vastus_
-- Mis kasutajanimed: _vastus_
-- Mis IP-lt: _vastus_
-- Mis kell esimene ja viimane: _vastus_
-- Käsk, millega leidsin: _vastus_
+> _vastus_
+
+## B4 · Mis juhtus öösel?
+
+Vastused ja käsud on failis `logid/b4-otsing.md`. **Kas `grep 500` oleks sama hea kui `grep 'staatus=500'`? Miks?**
+
+> _vastus_
+
+## B5 · Intsidendiraport
+
+- Mis juhtus ja millal: _vastus_
+- Kust (IP) ja mis kasutajanimedega: _vastus_
+- Kes kattis jäljed (`auid`) ja millega: _vastus_
+- Mis jäeti maha ja kas eemaldasid: _vastus_
+- Kuidas leidsid (käsud): _vastus_
 
 ## B6 · Keskserveri logide pööramine
 
-**Minu valikud ja põhjendus:**
+**Mitu päeva ja miks?**
 
 > _vastus_
 
