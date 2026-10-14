@@ -76,3 +76,31 @@ Kirjuta vastused `_vastus_` asemele. Konfid ja väljundid lähevad kaustadesse `
 **Minu valikud ja põhjendus:**
 
 > _vastus_
+
+---
+
+## Kodutöö
+
+Juhend: <https://hkhk-monitoring.github.io/monitoring/week01/homework/>. Skript läheb faili `kodutoo/logiraport.sh`. Need kontrollid annavad lisapunkte (BOONUS) ega mõjuta labori punkte.
+
+**Raporti väljund:**
+
+```text
+_kodutöö_
+```
+
+1. Mis IP-lt tulid sissetungi katsed ja miks on see IP sinu laboris just see?
+
+    > _kodutöö_
+
+2. Kui sul oleks 50 masinat ja iga masin kirjutaks 1 GB logisid päevas, mis läheks sinu skriptiga katki? Nimeta kaks asja.
+
+    > _kodutöö_
+
+3. Raport näitab, mis oli. Mida ta ei tee, mida tahaksid, et seiresüsteem teeks?
+
+    > _kodutöö_
+
+4. Miks on sõnade järgi vigade otsimine halvem kui tõsiduse järgi?
+
+    > _kodutöö_
