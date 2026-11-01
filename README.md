@@ -1,4 +1,4 @@
-# Labor 1: öövahetus
+# Praktikum 1: öövahetus
 
 **Nimi:** _vastus_
 
@@ -92,7 +92,7 @@ Vastused ja käsud on failis `logid/b4-otsing.md`. **Kas `grep 500` oleks sama h
 
 ## Kodutöö
 
-Juhend: <https://hkhk-monitoring.github.io/monitoring/week01/homework/>. Skript läheb faili `kodutoo/logiraport.sh`. Need kontrollid annavad lisapunkte (BOONUS) ega mõjuta labori punkte.
+Juhend: <https://hkhk-monitoring.github.io/monitoring/week01/homework/>. Skript läheb faili `kodutoo/logiraport.sh`.
 
 **Raporti väljund:**
 
@@ -100,7 +100,7 @@ Juhend: <https://hkhk-monitoring.github.io/monitoring/week01/homework/>. Skript 
 _kodutöö_
 ```
 
-1. Mis IP-lt tulid sissetungi katsed ja miks on see IP sinu laboris just see?
+1. Mis IP-aadressilt tulid tundmatu kasutajanimega sisselogimised ja miks on see aadress sinu laboris just see?
 
     > _kodutöö_
 
